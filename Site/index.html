@@ -9,8 +9,13 @@
         Header Element - Some header information goes here. Usually consists of company logo, some tag line, ect. Sometimes, navigation is contained in the header as well. 
         <nav> nav (short for navigation) element - Usually contains links to defferent parts of the web site.</nav>
     </header>
-<h1 style="color: green; font-size: 130px; text-align: center;">
- Main Heading of the PAge (Hard not to Have it)</h1>
+<hr>
+
+<h1 style="color: green; font-size: 60px; text-align: center;">
+ Main Heading of the Page (Hard not to Have it)</h1>
+ <hr>
+ <div>Example of an unstructured list</div>
+ <br>
  <section>
      Section 1
      <article>Article 1</article>
@@ -24,12 +29,124 @@
      <article>Article 6</article>
      <div>Regular DIV Element</div>
  </section>
-<p style="margin: 0 100px 0 100px; font-size: 1.5em;">Lorem ipsum dolor sit amet consectetur, 
-    adipisicing elit. Asperiores repellat sapiente commodi porro eius ratione magnam similique saepe dolore voluptatum.
-    Mollitia nemo et numquam placeat magni quo ullam saepe ratione?</p>
+ <aside> Aside - Some information that relates to the main 
+         topic, i.e., related posts.
+ </aside>
+
+ <br>
+
+ <div>Example: Unordered List
+     <ul>
+         <li>Thing 1</li>
+         <li>Thing 5</li>
+         <li>Thing 2
+            <ul>
+                <li>Subthing 1</li>
+                <li>Subthing 3</li>
+                <li>Subthing 5</li>
+            </ul>
+         </li>
+         <li>Thing 8</li> 
+         <li>Thing 3</li>
+     </ul>
+ </div>
+ <div> Example: Ordered List
+     <ol>
+         <li>Step 1</li>
+         <li>Step 2</li>
+         <li>Step 3
+             <ol>
+                 <li>Substep 1</li>
+                 <li>Substep 2</li>
+                 <li>Substep 3</li>
+             </ol>
+         </li>
+         <li>Final Step</li>
+     </ol>
+ </div>
+
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
     Fugiat hic et quos repudiandae eius dicta laborum magnam labore minima accusantium deserunt ad 
     illum delectus, in cupiditate, debitis iusto molestiae modi!</p>
+<hr>
+<h1>Notes:</h1>
+<h3>Characters that you should always escape</h3>
+<ul>
+    <li> &lt;
+        <ul>
+            <li> Use &_lt; with the _ removed to create the symbol</li>
+            <ul>
+                <li> If typed with an uppercase L then a double less than sign is created</li>
+            </ul>
+        </ul>
+    </li>
+    <li>&gt;
+        <ul>
+            <li>Use "&_gt ;" with the _ removed to create the symbol</li>
+            <ul>
+                <li> If typed with an uppercase G than a double greater than symbol is created</li>
+            </ul>
+        </ul>
+    </li>
+    <li>&amp;
+        <ul>
+            <li>Use "&_amp ; with the _ removed to create the symbol</li>
+        </ul>
+    </li>
+    <li>&copy;
+        <ul>Use "&_copy ;" with the _ removed to create the symbol</ul>
+    </li>
+    <li> Non wrapping Space i.e the spaces between words are removed so that when wrapping occurs the words move together to the next line
+        <ul>
+            <li> Example: Word1&amp;nbsp;Word2&amp;nbsp;Word3 </li>
+        </ul>
+    </li>
+</ul>
+</div>
+<br>
+<h3>Creating Links</h3>
+<h4>Internal Links</h4>
+<section>
+    We can link to a file in the same directory as this HMLT file like this: 
+    <a href="same-directory-link.html" title="same dir link">
+    Linking to a file in the same directory</a>
+    <ul>
+        <li>The text that follows the &lt; sign that ends the opening statement is what will appear as the text for the link</li>
+        <li>A basic vizualization of the structure &lt;a&gt; href="file path" title="A title"&gt; Text that will appear as the link&lt;/a&gt;</li>
+        <ul>
+            <li>You can also use DIV within &lt;a and /a&gt; to place the link on the line below </li>
+            <ul>
+                <li>Example: <a href="same-directory-link.html" title="Same dir link">
+                    <div> Linking a file in the same directory</div></a> </li>
+            </ul>
+            <li>If a direct file path or webpage is not given HTML will assume that the file that is placed under "file path" will be in the same directory</li>
+        </ul>
+    </ul>
+</section>
+<br>
+<h4>External Links</h4>
+<section>
+    We can link to a different website by using href="Web Address" target="" title="" within the &lt; 
+    <ul>
+        <li>When  target is set to "_blank" a new tab is created when the link is clicked</li>
+    </ul>
+</section>
+<br>
+<h4>Fragment Identifier</h4>
+<section id="Fragment Identifier">
+    When creating a link within a webpage that references another point in the same webpage you can assign an id to any tag in the html that will be referenced by the link
+    <div>Example:</div>
+    <div>
+        <ul>
+            <li><a href="#Fragment Identifier">FragmentID</a></li>
+            <ul>
+                <li>
+                    When creating the id attached to the tag the # symbol is not used but it is used in the href= portion of the html
+                </li>
+            </ul>
+        
+    </ul></div>
+</section>
 <footer>
     <hr>
     <p style="text-align: center;"
